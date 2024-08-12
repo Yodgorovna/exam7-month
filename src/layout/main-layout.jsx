@@ -1,10 +1,10 @@
 import React from "react";
 import { Outlet, Link, Navigate } from "react-router-dom";
-import { Logo } from "../components/icons/logo";
-import { Setting } from "../components/icons/setting";
-import { User } from "../components/icons/user";
-import { Payments } from "../components/icons/payments";
-import { Cart } from "../components/icons/cart";
+import { Logo } from "../components/icons/Logo";
+import { Setting } from "../components/icons/Setting";
+import { User } from "../components/icons/User";
+import { Payments } from "../components/icons/Payments";
+import { Cart } from "../components/icons/Cart";
 import { MainButton } from "../components/buttons/MainButton";
 import { loadState } from "../config/storage";
 
