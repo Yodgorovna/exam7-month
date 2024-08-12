@@ -5,7 +5,7 @@ import { Setting } from "../components/icons/setting";
 import { User } from "../components/icons/user";
 import { Payments } from "../components/icons/payments";
 import { Cart } from "../components/icons/cart";
-import { MainButton } from "../components/buttons/mainButton";
+import { MainButton } from "../components/buttons/MainButton";
 import { loadState } from "../config/storage";
 
 export const MainLayout = () => {
