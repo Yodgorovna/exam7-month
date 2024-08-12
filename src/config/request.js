@@ -1,3 +1,3 @@
 import axios from "axios";
 
-const request = axios.create({ baseURL: "http://localhost:3000" });
+export const request = axios.create({ baseURL: "http://localhost:3000" });

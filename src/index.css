@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "Mulish";
+  src: url("./fonts//Mulish/static/Mulish-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "MulishBold";
+  src: url("./fonts//Mulish/static/Mulish-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "MulishSemiBold";
+  src: url("./fonts//Mulish/static/Mulish-SemiBold.ttf");
+  font-weight: 600;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
