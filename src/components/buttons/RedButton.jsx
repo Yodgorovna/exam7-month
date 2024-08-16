@@ -1,10 +1,10 @@
 import React from "react";
 
-export const Button = ({ label, onClick, children }) => {
+export const RedButton = ({ children, onClick }) => {
   return (
     <div>
       <button
-        className="relative px-10 py-3 font-medium text-white transition duration-300 bg-green-400 rounded-md hover:bg-green-500 ease"
+        className="relative px-10 py-3 font-medium text-white transition duration-300 bg-red-400 rounded-md hover:bg-red-500 ease"
         onClick={onClick}
       >
         <span className="absolute bottom-0 left-0 h-full -ml-2">
@@ -35,7 +35,6 @@ export const Button = ({ label, onClick, children }) => {
             />
           </svg>
         </span>
-
         {children}
       </button>
     </div>

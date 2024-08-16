@@ -7,6 +7,8 @@ import { Cart } from "./pages/cart";
 import { Payments } from "./pages/payments";
 import { Users } from "./pages/users";
 import { Login } from "./pages/login";
+import { CategoryProduct } from "./pages/CategoryProduct";
+import { EditProduct } from "./pages/editProduct";
 
 function App() {
   return (
@@ -14,12 +16,14 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<MainLayout />}>
+          <Route path="addProduct" element={<AddProduct />} />
+          <Route path="products" element={<Home />} />
           <Route index element={<Home />} />
-          <Route path="settings" element={<Settings />} />
           <Route path="users" element={<Users />} />
-          <Route path="addProducts" element={<AddProduct />} />
           <Route path="cart" element={<Cart />} />
           <Route path="payments" element={<Payments />} />
+          <Route path="category-product/:id" element={<CategoryProduct />} />
+          <Route path="product-edit/:id" element={<EditProduct />} />
         </Route>
       </Routes>
     </>
@@ -27,7 +31,3 @@ function App() {
 }
 
 export default App;
-
-{
-  /*  */
-}

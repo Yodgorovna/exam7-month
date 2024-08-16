@@ -20,7 +20,7 @@ export const MainLayout = () => {
         <div className="flex">
           <div className="mt-9 ml-[-12px] flex flex-col">
             <MainButton>
-              <Link to="/settings">
+              <Link to="/products">
                 <Setting />
               </Link>
             </MainButton>
@@ -40,7 +40,7 @@ export const MainLayout = () => {
               </Link>
             </MainButton>
           </div>
-          <div className="p-7 ">
+          <div className="p-7">
             <Outlet />
           </div>
         </div>
