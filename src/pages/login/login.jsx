@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useLogin } from "../../service/mutation/useLogin";
 import { saveState } from "../../config/storage";
+import { RedButton } from "../../components/buttons/RedButton";
 
 const schema = z.object({
   email: z.string().min(3, "Please enter a valid value"),
@@ -59,8 +60,10 @@ export const Login = () => {
               <p className="text-red-500">{errors.email.message}</p>
             )}
           </div>
-
-          <Button label="send" className=""></Button>
+          <div className="flex justify-between">
+            <Button className=""> send</Button>
+            <RedButton>cancel</RedButton>
+          </div>
         </form>
       </div>
     </div>
